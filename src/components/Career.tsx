@@ -15,43 +15,37 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h4>Jr. Graphic Designer (Intern)</h4>
+                <h5>Kaachal Exporters Pvt Ltd</h5>
               </div>
-              <h3>2020</h3>
+              <h3>2021-22</h3>
             </div>
             <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
+              Collaborated with teams to create cohesive brand designs. Produced digital graphics for websites, social media channels, and online advertisements.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
+                <h4>Graphic Designer (Remote)</h4>
+                <h5>ZETO & Maloo Group</h5>
               </div>
-              <h3>2021</h3>
+              <h3>2024</h3>
             </div>
             <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
+              Leveraged AI to enhance product images across e-commerce platforms. Developed compelling product listings for Amazon and Flipkart, and contributed to visual designs including web layouts.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
+                <h4>Graphic Designer</h4>
+                <h5>Bloomberry & Freelance</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
+              Designing innovative graphics for online platforms and managing social media accounts. Continuously generating AI-powered images tailored to client specifications and boosting audience engagement.
             </p>
           </div>
         </div>

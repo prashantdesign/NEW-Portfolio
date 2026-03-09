@@ -87,22 +87,22 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>FRONTEND</h3>
-              <h4>Building Interactive UIs</h4>
+              <h3>DESIGN & BRANDING</h3>
+              <h4>Creating Visual Identities</h4>
               <p>
-                Crafting performant, responsive interfaces with modern frameworks.
-                From SPAs to micro-frontends, I deliver pixel-perfect experiences.
+                Crafting memorable brand identities and packaging. From logos to complete
+                visual suites, I ensure strong brand consistency.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">React.js</div>
-                <div className="what-tags">Angular</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">Material UI</div>
-                <div className="what-tags">HTML5</div>
-                <div className="what-tags">CSS3</div>
+                <div className="what-tags">Graphic Design</div>
+                <div className="what-tags">Adobe Creative Suite</div>
+                <div className="what-tags">Photoshop</div>
+                <div className="what-tags">InDesign</div>
+                <div className="what-tags">Figma</div>
+                <div className="what-tags">Canva</div>
+                <div className="what-tags">WordPress</div>
+                <div className="what-tags">Image Sourcing</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -126,22 +126,21 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BACKEND</h3>
-              <h4>Scalable Server Architecture</h4>
+              <h3>E-COMMERCE & MARKETING</h3>
+              <h4>Amazon & Flipkart Creatives</h4>
               <p>
-                Designing robust APIs and microservices. From CMS platforms to
-                complex business logic, I build backends that scale.
+                Designing high-converting product listings, social media creatives, and 
+                performance marketing visuals utilizing AI tools.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">NestJS</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">REST APIs</div>
-                <div className="what-tags">Microservices</div>
-                <div className="what-tags">Python</div>
+                <div className="what-tags">AI in Design</div>
+                <div className="what-tags">Social Media Design</div>
+                <div className="what-tags">E-commerce Design</div>
+                <div className="what-tags">Adobe Express</div>
+                <div className="what-tags">Digital Marketing</div>
+                <div className="what-tags">MS Office</div>
+                <div className="what-tags">PowerPoint</div>
               </div>
               <div className="what-arrow"></div>
             </div>
