@@ -11,13 +11,14 @@ export let lenis: Lenis;
 const Navbar = () => {
   useEffect(() => {
     lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      duration: 0.9,
+      easing: (t) => 1 - Math.pow(1 - t, 4),
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
+      syncTouch: true,
+      wheelMultiplier: 0.9,
+      touchMultiplier: 1.8,
     });
 
     lenis.scrollTo(0, { immediate: true });

@@ -6,7 +6,6 @@
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
-  scroll-behavior: smooth;
   color-scheme: light dark;
   color: #eae5ec;
   background-color: var(--backgroundColor);
@@ -94,6 +93,7 @@ body {
 
 .split-line {
   overflow: hidden;
+  will-change: transform;
 }
 
 .split-h2 {
@@ -101,6 +101,7 @@ body {
   display: flex;
   white-space: nowrap;
   flex-wrap: nowrap;
+  will-change: transform;
 }
 
 .techstack {
