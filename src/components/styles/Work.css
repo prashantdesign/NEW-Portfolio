@@ -329,3 +329,39 @@
     max-height: 250px;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel-arrow {
+    position: static;
+    transform: none;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .carousel-arrow-left,
+  .carousel-arrow-right {
+    position: static;
+  }
+
+  .carousel-dots {
+    order: 3;
+  }
+
+  .carousel-track-container {
+    order: 1;
+  }
+
+  .carousel-nav-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    order: 2;
+    margin-top: 12px;
+  }
+}

@@ -37,7 +37,7 @@
   height: 500px;
   margin-left: 200px;
   position: relative;
-  display: none;
+  display: flex;
 }
 .what-content {
   width: 450px;
@@ -313,7 +313,7 @@
     padding: 10px 50px;
   }
 }
-@media only screen and (max-width: 900px) {
+ @media only screen and (max-width: 900px) {
   .whatIDO {
     flex-direction: column;
   }
@@ -326,7 +326,8 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: auto;
+    min-height: 500px;
   }
   .what-box {
     width: 500px;
@@ -338,7 +339,9 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: auto;
+    min-height: 450px;
+    display: flex;
   }
   .what-content h5,
   .what-content-flex {
@@ -360,6 +363,7 @@
   .what-noTouch:hover,
   .what-content-active {
     padding: 10px 30px;
+    min-height: 67%;
   }
   .what-tags {
     font-size: 11px;

@@ -71,22 +71,24 @@ const Work = () => {
 
         <div className="carousel-wrapper">
           {/* Navigation Arrows */}
-          <button
-            className="carousel-arrow carousel-arrow-left"
-            onClick={goToPrev}
-            aria-label="Previous project"
-            data-cursor="disable"
-          >
-            <MdArrowBack />
-          </button>
-          <button
-            className="carousel-arrow carousel-arrow-right"
-            onClick={goToNext}
-            aria-label="Next project"
-            data-cursor="disable"
-          >
-            <MdArrowForward />
-          </button>
+          <div className="carousel-nav-row">
+            <button
+              className="carousel-arrow carousel-arrow-left"
+              onClick={goToPrev}
+              aria-label="Previous project"
+              data-cursor="disable"
+            >
+              <MdArrowBack />
+            </button>
+            <button
+              className="carousel-arrow carousel-arrow-right"
+              onClick={goToNext}
+              aria-label="Next project"
+              data-cursor="disable"
+            >
+              <MdArrowForward />
+            </button>
+          </div>
 
           {/* Slides */}
           <div className="carousel-track-container">

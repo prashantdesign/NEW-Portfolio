@@ -33,7 +33,7 @@ const Career = () => {
               <h3>2024</h3>
             </div>
             <p>
-              Leveraged AI to enhance product images across e-commerce platforms. Developed compelling product listings for Amazon and Flipkart, and contributed to visual designs including web layouts.
+              Leveraged AI to enhance product images across e-commerce platforms. Designed compelling product listings for Amazon and Flipkart, and contributed to visual identities including web layouts.
             </p>
           </div>
           <div className="career-info-box">
