@@ -1,11 +1,10 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
-import { MdArrowBack } from "react-icons/md";
-import { top6Projects, allProjects, processGDriveLink, Project } from "./utils/portfolioData";
-import { gsap } from "gsap";
+import { top6Projects, processGDriveLink, Project } from "./utils/portfolioData";
 
-const MasonryGrid = ({ projects }: { projects: Project[] }) => {
+export const MasonryGrid = ({ projects }: { projects: Project[] }) => {
   return (
     <div className="masonry-grid">
       {projects.map((project, index) => (
@@ -15,9 +14,9 @@ const MasonryGrid = ({ projects }: { projects: Project[] }) => {
               <WorkImage image={processGDriveLink(project.image)} alt={project.title} />
             </div>
             <div className="masonry-details">
-               <span className="masonry-category">{project.category}</span>
-               <h4>{project.title}</h4>
-               <p className="masonry-tools">{project.tools}</p>
+              <span className="masonry-category">{project.category}</span>
+              <h4>{project.title}</h4>
+              <p className="masonry-tools">{project.tools}</p>
             </div>
           </div>
         </div>
@@ -27,41 +26,10 @@ const MasonryGrid = ({ projects }: { projects: Project[] }) => {
 };
 
 const Work = () => {
-  const [showFullPortfolio, setShowFullPortfolio] = useState(false);
-  const overlayRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => {
-    if (showFullPortfolio && overlayRef.current) {
-      // Animate opening
-      gsap.fromTo(
-        overlayRef.current,
-        {
-          clipPath: "circle(0% at 50% 90%)",
-          opacity: 0,
-          display: "none"
-        },
-        {
-          clipPath: "circle(150% at 50% 90%)",
-          opacity: 1,
-          display: "block",
-          duration: 1,
-          ease: "power3.inOut"
-        }
-      );
-    } else if (!showFullPortfolio && overlayRef.current) {
-      // Animate closing
-      gsap.to(overlayRef.current, {
-        clipPath: "circle(0% at 50% 90%)",
-        opacity: 0,
-        duration: 0.8,
-        ease: "power3.inOut",
-        onComplete: () => {
-          if (overlayRef.current) overlayRef.current.style.display = "none";
-        }
-      });
-    }
-  }, [showFullPortfolio]);
+  // Smooth scroll logic is handled by lenis, but we can animate the page entry in the other component if we want.
 
   return (
     <div className="work-section" id="work">
@@ -75,38 +43,16 @@ const Work = () => {
 
         {/* View More Button */}
         <div className="view-more-container">
-          <button 
+          <button
             ref={buttonRef}
             className="view-more-btn"
-            onClick={() => setShowFullPortfolio(true)}
+            onClick={() => navigate("/projects")}
             data-cursor="disable"
           >
             <div className="btn-content">
-               <span>View More</span>
+              <span>View More</span>
             </div>
           </button>
-        </div>
-      </div>
-
-      {/* Full Portfolio Overlay */}
-      <div 
-        ref={overlayRef}
-        className="full-portfolio-overlay" 
-        style={{ display: "none" }}
-      >
-        <div className="full-portfolio-header">
-           <button 
-             className="back-button"
-             onClick={() => setShowFullPortfolio(false)}
-             data-cursor="disable"
-           >
-             <MdArrowBack /> <span>Back</span>
-           </button>
-           <h2>All <span>Projects</span></h2>
-        </div>
-        
-        <div className="full-portfolio-content section-container">
-           <MasonryGrid projects={allProjects} />
         </div>
       </div>
     </div>

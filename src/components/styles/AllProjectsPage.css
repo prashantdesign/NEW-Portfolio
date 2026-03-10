@@ -1,0 +1,51 @@
+.all-projects-page {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--backgroundColor);
+    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.all-projects-header-wrapper {
+    position: relative;
+    z-index: 100;
+}
+
+.all-projects-page .header {
+    position: relative;
+    padding-top: 20px;
+}
+
+.all-projects-page .full-portfolio-header-container {
+    margin-top: 40px;
+}
+
+.all-projects-page .full-portfolio-header {
+    background: transparent;
+    border-bottom: none;
+    backdrop-filter: none;
+    padding: 20px 5%;
+}
+
+.all-projects-page .full-portfolio-content {
+    padding-top: 20px;
+}
+
+.all-projects-page .back-button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.all-projects-page .back-button:hover {
+    background: rgba(94, 234, 212, 0.1);
+    border-color: var(--accentColor);
+    color: var(--accentColor);
+}
