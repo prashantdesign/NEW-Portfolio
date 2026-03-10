@@ -250,7 +250,7 @@
 /* ── Responsive ── */
 @media only screen and (max-width: 1024px) {
   .masonry-grid {
-    column-count: 2;
+    column-count: 3;
   }
 }
 
@@ -260,7 +260,13 @@
   }
 
   .masonry-grid {
-    column-count: 1;
+    column-count: 3;
+    column-gap: 10px;
+  }
+
+  .masonry-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
   }
 
   .full-portfolio-header h2 {
