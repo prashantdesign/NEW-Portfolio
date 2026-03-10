@@ -3,12 +3,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import Lenis from "lenis";
+import { useLoading } from "../context/LoadingProvider";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollTrigger);
 export let lenis: Lenis;
 
 const Navbar = () => {
+  const { isLoading } = useLoading();
+
   useEffect(() => {
     lenis = new Lenis({
       duration: 1.2,
@@ -21,7 +24,9 @@ const Navbar = () => {
     });
 
     lenis.scrollTo(0, { immediate: true });
-    lenis.stop();
+    if (isLoading) {
+      lenis.stop();
+    }
 
     lenis.on("scroll", ScrollTrigger.update);
 
