@@ -10,12 +10,12 @@ export const MasonryGrid = ({ projects }: { projects: Project[] }) => {
 
   useEffect(() => {
     if (selectedIndex !== null) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflowY = "hidden";
     } else {
-      document.body.style.overflow = "";
+      document.body.style.overflowY = "auto";
     }
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflowY = "auto";
     };
   }, [selectedIndex]);
 
