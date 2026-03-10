@@ -46,11 +46,11 @@ const AllProjectsPage = () => {
                         PK
                     </a>
                     <a
-                        href="mailto:prashantmali0753@gmail.com"
+                        href="mailto:Prashantkumarsheoganj@gmail.com"
                         className="navbar-connect"
                         data-cursor="disable"
                     >
-                        prashantmali0753@gmail.com
+                        Prashantkumarsheoganj@gmail.com
                     </a>
                     <ul>
                         <li>
