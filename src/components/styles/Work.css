@@ -13,7 +13,7 @@
   margin-bottom: 50px;
 }
 
-.work-section h2 > span {
+.work-section h2>span {
   color: var(--accentColor);
 }
 
@@ -216,7 +216,7 @@
   text-align: center;
 }
 
-.full-portfolio-header h2 > span {
+.full-portfolio-header h2>span {
   color: var(--accentColor);
 }
 
@@ -262,17 +262,111 @@
   .masonry-grid {
     column-count: 1;
   }
-  
+
   .full-portfolio-header h2 {
     font-size: 30px;
   }
-  
+
   .back-button {
     padding: 8px 15px;
     font-size: 14px;
   }
-  
+
   .back-button span {
     display: none;
+  }
+}
+
+/* ── Lightbox Overlay ── */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+  z-index: 10001;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.lightbox-close {
+  top: 20px;
+  right: 20px;
+  /* position relative to window */
+  position: fixed;
+}
+
+.lightbox-prev {
+  left: 20px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-next {
+  right: 20px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .lightbox-close {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    top: 15px;
+    right: 15px;
   }
 }
